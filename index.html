@@ -1,86 +1,71 @@
-<!doctype html>
-<html class="no-js" lang="en"><!-- specify language: http://www.w3.org/TR/html401/struct/dirlang.html#h-8.1 -->
-<head prefix="og: http://ogp.me/ns#"><!-- enable Open Graph: http://ogp.me/ -->
-
-    <!-- charset & http-equiv may be set via response header: https://github.com/h5bp/html5-boilerplate/blob/master/doc/html.md#x-ua-compatible -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>A11Y Boilerplate</title>
-    <meta name="description" content="The Accessibility Boilerplate is a basic HTML template to kickstart your web project responsibly.">
-    <meta name="keywords" content="a11y, accessibility, html5, boilerplate, template, aria, landmark roles, structure, banner, search, navigation, contentinfo">
-    <meta property="og:image" content="http://voorhoede.github.io/a11y-boilerplate/a11y-boilerplate.png">
-    <meta property="og:url"   content="http://voorhoede.github.io/">
-    <!-- optionally add more Open Graph metadata: http://ogp.me/#metadata -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- specify viewport: https://developers.google.com/speed/docs/insights/ConfigureViewport -->
-    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
-
-    <!-- Include stylesheets here. Concatenate & minify for performance: https://developers.google.com/speed/docs/insights/MinifyResources -->
-</head>
-<body>
-	<!-- userway free plugin -->
-	<script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "#########");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
-	
-    <header role="banner" class="site-header">
-        <a class="site-logo" href="/" rel="home" title="to homepage">
-            <!-- link to home: http://microformats.org/wiki/rel-home -->
-            <h1>
-                <img alt="A11Y Boilerplate"
-                     src="a11y-boilerplate.svg"
-                     onerror="this.src='a11y-boilerplate.png;'"
-                     width="200" height="200"
-                    />
-                <!-- vector image with bitmap fallback: https://twitter.com/scottjehl/status/369190249437483008 -->
-                <!-- specify image dimensions for performance: http://www.feedthebot.com/pagespeed/image-dimensions.html -->
-            </h1>
-        </a>
-
-        <!-- Quick menu (skipnav) to directly jump to specific sections: http://www.jimthatcher.com/skipnav.htm -->
-		<nav class="site-header-quick-menu a11y-sr-only" aria-hidden="true">
-            <h4>Quick Menu</h4>
-            <ul class="menu simple vertical">
-                <li><a class="a11y-kb-only" href="#content">Jump to content</a></li>
-				<li><a class="a11y-kb-only" href="#header">Jump to header</a></li>
-                <li><a class="a11y-kb-only" href="#navigation">Jump to main menu</a></li>
-            </ul>
-        </nav>
-		
-		<!-- specify main navigation area -->
-        <ul id="navigation" role="navigation" aria-label="Main Navigation">
-			
-		</ul>
-
-        <!-- Mark search controls for enhanced a11y: http://www.w3.org/TR/wai-aria/roles#search -->
-        <div role="search" class="search-menu">
-            <a id="search" rel="search" href="https://example.com/search">
-                <span class="icon-search"></span>
-                <span class="a11y-sr-only">Search</span>
-            </a>
-            <form method="GET" action="https://www.example.com/search" class="search-menu-form">
-                <label>
-                    <span class="a11y-sr-only">Keywords</span>
-                    <input type="search" name="q" placeholder="keyword(s)" />
-                </label>
-                <button>
-                    <span class="icon-search"></span>
-                    <span class="a11y-sr-only">Search on example.com</span>
-                </button>
-            </form>
-        </div>
-
-    </header>
-
-	<!-- specify main content area -->
-    <div id="content" role="main" tabindex="-1" aria-label="Page Content">
-        <!-- tabindex fixes focus issue -->
-	</div>
-
-    <footer role="contentinfo" class="site-footer">
-        <p>The A11Y Boilerplate is a project by <a href="http://voorhoede.nl">De Voorhoede</a>.</p>
-        <p>The code is licensed under <a href="https://github.com/voorhoede/a11y-boilerplate/blob/master/LICENSE">MIT License</a>. So use it however you like.</p>
-    </footer>
-
-    <!-- Include scripts here. Concatenate & minify for performance: https://developers.google.com/speed/docs/insights/MinifyResources -->
-</body>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<!-- specify language: http://www.w3.org/TR/html401/struct/dirlang.html#h-8.1 -->
+	<head prefix="og: http://ogp.me/ns#">
+		<meta charset="utf-8"><!-- enable Open Graph: http://ogp.me/ -->
+		<!-- charset & http-equiv may be set via response header: https://github.com/h5bp/html5-boilerplate/blob/master/doc/html.md#x-ua-compatible -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>
+			A11Y Boilerplate
+		</title>
+		<meta name="description" content="The Accessibility Boilerplate is a basic HTML template to kickstart your web project responsibly.">
+		<meta name="keywords" content="a11y, accessibility, html5, boilerplate, template, aria, landmark roles, structure, banner, search, navigation, contentinfo">
+		<meta property="og:image" content="http://voorhoede.github.io/a11y-boilerplate/a11y-boilerplate.png">
+		<meta property="og:url" content="http://voorhoede.github.io/"><!-- optionally add more Open Graph metadata: http://ogp.me/#metadata -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- specify viewport: https://developers.google.com/speed/docs/insights/ConfigureViewport -->
+		<!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+		<!-- Include stylesheets here. Concatenate & minify for performance: https://developers.google.com/speed/docs/insights/MinifyResources -->
+	</head>
+	<body>
+		<!-- userway free plugin -->
+		<script>
+		(function(d){var s = d.createElement("script");s.setAttribute("data-account", "#########");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)
+		</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
+		<header role="banner" class="site-header">
+			<a class="site-logo" href="/" rel="home" title="to homepage"><!-- link to home: http://microformats.org/wiki/rel-home -->
+			<h1>
+				<img alt="A11Y Boilerplate" src="a11y-boilerplate.svg" onerror="this.src='a11y-boilerplate.png;'" width="200" height="200"> <!-- vector image with bitmap fallback: https://twitter.com/scottjehl/status/369190249437483008 -->
+				 <!-- specify image dimensions for performance: http://www.feedthebot.com/pagespeed/image-dimensions.html -->
+			</h1></a> 
+			<!-- Quick menu (skipnav) to directly jump to specific sections: http://www.jimthatcher.com/skipnav.htm -->
+			<nav class="site-header-quick-menu a11y-sr-only" aria-hidden="true">
+				<h4>
+					Quick Menu
+				</h4>
+				<ul class="menu simple vertical">
+					<li>
+						<a class="a11y-kb-only" href="#content">Jump to content</a>
+					</li>
+					<li>
+						<a class="a11y-kb-only" href="#header">Jump to header</a>
+					</li>
+					<li>
+						<a class="a11y-kb-only" href="#navigation">Jump to main menu</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- specify main navigation area -->
+			<ul id="navigation" role="navigation" aria-label="Main Navigation"></ul>
+			<!-- Mark search controls for enhanced a11y: http://www.w3.org/TR/wai-aria/roles#search -->
+			<div role="search" class="search-menu">
+				<a id="search" rel="search" href="https://example.com/search"><span class="a11y-sr-only">Search</span></a>
+				<form method="get" action="https://www.example.com/search" class="search-menu-form">
+					<label><span class="a11y-sr-only">Keywords</span> <input type="search" name="q" placeholder="keyword(s)"></label> <button> <span class="a11y-sr-only">Search on example.com</span></button>
+				</form>
+			</div>
+		</header>
+		<!-- specify main content area -->
+		<div id="content" role="main" tabindex="-1" aria-label="Page Content">
+			<!-- tabindex fixes focus issue -->
+		</div>
+		<footer role="contentinfo" class="site-footer">
+			<p>
+				The A11Y Boilerplate is a project by <a href="http://voorhoede.nl">De Voorhoede</a>.
+			</p>
+			<p>
+				The code is licensed under <a href="https://github.com/voorhoede/a11y-boilerplate/blob/master/LICENSE">MIT License</a>. So use it however you like.
+			</p>
+		</footer>
+		<!-- Include scripts here. Concatenate & minify for performance: https://developers.google.com/speed/docs/insights/MinifyResources -->
+	</body>
 </html>
