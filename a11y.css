@@ -1,4 +1,3 @@
-
 .a11y-sr-only,
 .a11y-kb-only {
 	border: 0;
@@ -19,4 +18,13 @@
 	overflow: visible;
 	position: static;
 	width: auto;
+}
+
+:focus {
+  outline: none;
+}
+
+.uwy.userway_p1 .uai {
+  top: 5px !important;
+  right: 5px !important;
 }
